@@ -12,7 +12,7 @@ Antes de começar, certifique-se de ter o **Node.js** instalado em seu computado
 Após confirmar a instalação do Node.js, clone o repositório para sua máquina local:
 ```bash
 # Clone o repositório
-git clone <URL_DO_SEU_REPOSITORIO>
+git clone "https://github.com/codariadev/projeto-estudo-main.git"
 
 # Entre na pasta do projeto
 cd nome-do-seu-projeto

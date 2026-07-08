@@ -30,5 +30,3 @@ npm run dev
 
 ```
 Abra http://localhost:3000 no seu navegador para ver o resultado.
-*Dica: Você pode substituir <URL_DO_SEU_REPOSITORIO> pelo link real quando o tiver em mãos.*
-**Gostaria que eu adaptasse algo mais no texto ou que incluísse alguma instrução específica sobre variáveis de ambiente (.env)?**

@@ -15,7 +15,7 @@ Após confirmar a instalação do Node.js, clone o repositório para sua máquin
 git clone "https://github.com/codariadev/projeto-estudo-main.git"
 
 # Entre na pasta do projeto
-cd nome-do-seu-projeto
+cd projeto-estudo-main
 
 # Instale as dependências
 npm install

@@ -2,6 +2,8 @@ import styles from './page.module.css'
 
 export default function Login() {
   return (
-  //Codigo HTML
-  )
+    <main className={styles.container}>
+      {/* // Codigo HTML */}
+    </main>
+  );
 }

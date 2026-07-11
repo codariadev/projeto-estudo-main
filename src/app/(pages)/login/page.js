@@ -6,12 +6,12 @@ export default function Login() {
         <section>
             <h1>Login</h1>  
             <form className={styles.form}>
-                <div className={styles.div-form}>
-                    <label for="email" className={styles.label-form}>Email</label>
+                <div className={styles.divForm}>
+                    <label for="email" className={styles.labelForm}>Email</label>
                     <input type="email" name="email" id="email" required/>
                 </div>
-                <div className={styles.div-form}>
-                    <label for="password" className={styles.label-form}>Password</label>
+                <div className={styles.divForm}>
+                    <label for="password" className={styles.labelForm}>Password</label>
                     <input type="password" name="password" id="password"/>
                 </div>
                 <p className={styles.p}><a href="#" target="_blank">Forgot password?</a></p>

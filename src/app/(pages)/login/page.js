@@ -2,8 +2,8 @@ import styles from './page.module.css'
 
 export default function Login() {
   return (
-    <main>
-        <section>
+    <main className={styles.container}>
+        
             <h1>Login</h1>  
             <form className={styles.form}>
                 <div className={styles.divForm}>
@@ -18,7 +18,7 @@ export default function Login() {
                 <button className={styles.submit} type="submit">Log in</button>
                 <p className={styles.p}>Don't have an account? <a href="#" target="_blank">Sign up</a></p>
             </form>
-        </section>
+        
     </main>
   );
 }

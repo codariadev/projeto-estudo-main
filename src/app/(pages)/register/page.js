@@ -1,26 +1,20 @@
 import styles from './page.module.css'
 
-export default function Login() {
+export default function Register() {
   return (
-    <main className={styles.container}>
-        
-            <h1>Register Page</h1>  
-            <form className={styles.form}>
-                <div className={styles.divForm}>
-                    <label for="email" className={styles.labelForm}>Email</label>
-                    <input type="email" name="email" id="email" required/>
+    <main className={styles.registerPage}>
+            <form className={styles.registerCard}>
+              <img src="/logo.png" alt="logo"/>
+                <div className={styles.registerForm}>      
+                    <input type="email" name="email" id="email" Placeholder='Email'/>
+                
+                    <input type="password" name="password" id="password" Placeholder='Senha'/>
+
+                    <input type="password" name="password" id="password" placeholder='Confirme sua senha'/>
+                    {/* <button className={styles.submit} type="submit">Log in</button> */}
                 </div>
-                <div className={styles.divForm}>
-                    <label for="password" className={styles.labelForm}>Password</label>
-                    <input type="password" name="password" id="password"/>
-                </div>
-                <div className={styles.divForm}>
-                    <label for="confirmPassword" className={styles.labelForm}>Confirm Password</label>
-                    <input type="password" name="confirmPassword" id="confirmPassword"/>
-                </div>
-                <button className={styles.submit} type="submit">Register</button>
+              <p className={styles.haveAccount}>Já tem conta? <a href="#" target="_blank">acesse</a></p>
             </form>
-        
     </main>
   );
 }

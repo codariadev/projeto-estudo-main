@@ -1,12 +1,21 @@
 {
-  "name": "projeto-estudo",
-  "version": "0.1.0",
+  "name": "SincroAlign CRM Inteligente",
+  "version": "1.0.0",
   "private": true,
+  "description": "Um CRM feito para quem precisa.",
+  "author": "CodariaDev e colaboradores",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seu-usuario/projeto-estudo.git"
+  },
+  "keywords": ["nextjs", "react", "web"],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint . --fix",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "next": "16.2.9",
@@ -16,6 +25,7 @@
   "devDependencies": {
     "babel-plugin-react-compiler": "1.0.0",
     "eslint": "^9",
-    "eslint-config-next": "16.2.9"
+    "eslint-config-next": "16.2.9",
+    "prettier": "latest"
   }
 }

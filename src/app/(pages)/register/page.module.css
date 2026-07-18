@@ -1,85 +1,65 @@
-:root {
-  --bg-light: #efefef;
-  --bg-dark: #707070;
-  --clr: #58bc82;
-  --clr-alpha: #9c9c9c60;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.registerPage {
     width: 100%;
     height: 100vh;
-}
 
-.form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    width: 100%;
-    max-width: 400px;
-    margin-top: 10rem;
-    margin-left: 80rem;
-}
-
-.form .divForm {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-}
-
-.form .labelForm {
-    font-size: 1.5rem;
-}
-
-.form input[type="email"],
-.form input[type="password"],
-.form input[type="confirmPassword"] {
-    border-radius: .5rem;
-    padding: 1rem;
-    width: 100%;
-    border: none;
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-    background-color: var(--clr-alpha);
-    outline: 2px solid var(--bg-dark);
-}
-
-.form input[type="email"]:focus,
-.form input[type="password"]:focus,
-.form input[type="confirmPassword"]:focus {
-    outline: 2px solid var(--clr)
-}
-
-.label {
-    align-self: flex-start;
-    color: var(--clr);
-    font-weight: 600;
-}
-
-.form .submit {
-    padding: 1rem .75rem;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: .5rem;
-    border-radius: 3rem;
-    background-color: var(--bg-dark);
-    color: var(--bg-light);
-    border: none;
-    cursor: pointer;
-    transition: all 300ms;
-    font-weight: 600;
-    font-size: 1.1rem;
 }
 
-.form .submit:hover {
-    background-color: var(--clr);
-    color: var(--bg-dark);
+.registerCard {
+    width: 480px;
+    height: 600px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+    background-color: var(--background-login);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
+.registerForm {
+    width: 350px;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    input{
+        width: 100%;
+        height: 40px;
+        border: 1px solid var(--border-input);
+        border-radius: 10px;
+    }
+    input[placeholder]{
+        width: 100%;
+        height: 20px;
+        font-size: 14px;
+        font-weight: 200;
+        padding:10px;
+    }
+}
+ 
+.haveAccount {
+    width: 100%;
+    height: 17px;
+    font-weight: 200;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.haveAccount > a{
+    width: 70px;
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.haveAccount > a::first-letter{
+    text-transform: uppercase;
+}

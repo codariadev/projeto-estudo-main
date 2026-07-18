@@ -1,10 +1,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --background-login: #f9f9fd;
+  --background-register-button: #f9f9fd;
+  --background-login-button: #f9f9fd;
   --border-input: #ecedec;
-  --primary-button: #7361ed;
-  --button-text: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {

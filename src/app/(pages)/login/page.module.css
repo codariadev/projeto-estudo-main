@@ -13,7 +13,7 @@
     border-radius: 25px;
     box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.2);
     box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
-    background-color: var(--background-login);
+    background-color: var(--background-login-button);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

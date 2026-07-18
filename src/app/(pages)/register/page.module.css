@@ -1,4 +1,4 @@
-.loginPage {
+.registerPage {
     width: 100%;
     height: 100vh;
 
@@ -7,7 +7,7 @@
     align-items: center;
 }
 
-.loginCard {
+.registerCard {
     width: 480px;
     height: 600px;
     border-radius: 25px;
@@ -20,7 +20,7 @@
     align-items: center;
 }
 
-.loginForm {
+.registerForm {
     width: 350px;
     height: 210px;
     display: flex;
@@ -40,26 +40,19 @@
         font-weight: 200;
         padding:10px;
     }
-    .forgotPassword {
-        height: 20px;
-        font-style: italic;
-        font-size: 14px;
-        font-weight: 300;
-        line-height: 1.2;
-    }
 }
  
-.noAccount {
-        width: 100%;
-        height: 17px;
-        font-weight: 200;
-        line-height: 1.2;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 15px;
-    }
-.noAccount > a{
+.haveAccount {
+    width: 100%;
+    height: 17px;
+    font-weight: 200;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.haveAccount > a{
     width: 70px;
     font-style: italic;
     font-size: 14px;
@@ -67,6 +60,6 @@
     line-height: 1.2;
 }
 
-.noAccount > a::first-letter{
+.haveAccount > a::first-letter{
     text-transform: uppercase;
 }

@@ -1,6 +1,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --background-register-button: #f9f9fd;
   --background-login-button: #f9f9fd;
   --border-input: #ecedec;
 }

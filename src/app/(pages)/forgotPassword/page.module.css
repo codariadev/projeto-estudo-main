@@ -1,4 +1,4 @@
-.registerPage {
+.forgotPasswordPage {
     width: 100%;
     height: 100vh;
 
@@ -7,7 +7,7 @@
     align-items: center;
 }
 
-.registerCard {
+.forgotPasswordCard {
     width: 480px;
     height: 600px;
     border-radius: 25px;
@@ -20,7 +20,7 @@
     align-items: center;
 }
 
-.registerForm {
+.forgotPasswordForm {
     width: 350px;
     height: 210px;
     display: flex;
@@ -42,7 +42,7 @@
     }
 }
  
-.haveAccount {
+.forgotPassword {
     width: 100%;
     height: 17px;
     font-weight: 200;
@@ -52,7 +52,7 @@
     justify-content: center;
     gap: 15px;
 }
-.haveAccount > a{
+.forgotPassword > a{
     width: 70px;
     font-style: italic;
     font-size: 14px;
@@ -60,6 +60,6 @@
     line-height: 1.2;
 }
 
-.haveAccount > a::first-letter{
+.forgotPassword > a::first-letter{
     text-transform: uppercase;
 }

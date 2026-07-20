@@ -1,0 +1,34 @@
+.systemContainer {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  grid-template-rows: 70px 1fr;
+  grid-template-areas: 
+    "sidebar topbar"
+    "sidebar main";
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.sidebarArea {
+  grid-area: sidebar;
+  background-color: #1e1e2d;
+  color: #fff;
+  height: 100%;
+}
+
+.topbarArea {
+  grid-area: topbar;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eaeaea;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.mainArea {
+  grid-area: main;
+  background-color: #f4f6f8;
+  padding: 24px;
+  overflow-y: auto;
+}

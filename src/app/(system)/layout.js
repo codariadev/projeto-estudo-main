@@ -1,11 +1,19 @@
-export default function systemLayout({ children }) {
+import Sidebar from '@/components/sidebar/page';
+import Topbar from '@/components/topbar/page';
+import styles from './layout.module.css';
+
+export default function SystemLayout({ children }) {
   return (
-    <div className="layout-container">
-      <h1></h1>
-      <div className="main-content">
-        <h2></h2>
-        <main>{children}</main>
+    <div className={styles.systemContainer}>
+      <div className={styles.sidebarArea}>
+        <Sidebar />
       </div>
+      <div className={styles.topbarArea}>
+        <Topbar />
+      </div>
+      <main className={styles.mainArea}>
+        {children}
+      </main>
     </div>
   );
 }

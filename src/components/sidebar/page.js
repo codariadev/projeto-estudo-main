@@ -32,8 +32,8 @@ export default function Sidebar() {
         </div>
         <div className={styles.menuItem}>
           <li>
-            <Image src="/icon-sidebar/times.svg" alt="projetos" loading='eager' width={30} height={30}/>
-            <span>Falta esse SVG</span>
+            <Image src="/icon-sidebar/relatorios.svg" alt="relatorios" loading='eager' width={30} height={30}/>
+            <span>Relatórios</span>
           </li>
         </div>
         <div className={styles.menuItem}>

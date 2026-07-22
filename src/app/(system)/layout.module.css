@@ -12,8 +12,7 @@
 
 .sidebarArea {
   grid-area: sidebar;
-  background-color: #1e1e2d;
-  color: #fff;
+  color: #000;
   height: 100%;
 }
 

@@ -6,7 +6,11 @@
 
   --primary-button: #7361ed;
   --login-text: #ffffff;
-  
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 @media (prefers-color-scheme: dark) {

@@ -12,3 +12,12 @@
     border: none;
     color: #FFF;
 }
+
+.search {
+    width: 150px;
+    height: 35px;
+    background: #7361ed;
+    border-radius: 10px;
+    border: none;
+    color: #FFF;
+}

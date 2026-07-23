@@ -10,9 +10,9 @@ export default function Topbar() {
         <Button variant="search">Pesquisar</Button>
       </div>
       <div className={styles.rightIcon}>
-        <Image src="/next.svg" alt='notifcação' width={25} height={25}/>
-        <Image src="/next.svg" alt='email' width={25} height={25}/>
-        <Image src="/next.svg" alt='perfil' width={25} height={25}/>
+        <Image src="/icon-sidebar/notificacao.svg" alt='notifcação' width={25} height={25}/>
+        <Image src="/icon-sidebar/email.svg" alt='email' width={25} height={25}/>
+        <Image src="/icon-sidebar/perfil.svg" alt='perfil' width={25} height={25}/>
       </div>
     </header>
   );

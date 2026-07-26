@@ -1,0 +1,29 @@
+.topbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    .searchContainer {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        gap: 25px;
+        input {
+            width: 670px;
+            height: 35px;
+            border-radius: 20px;
+            border: 1px solid #ecedec;
+        }
+        input[placeholder] {
+            padding-left: 20px;
+        }
+    }
+    .rightIcon {
+        width: 310px;
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+}

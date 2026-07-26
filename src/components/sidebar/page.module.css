@@ -1,38 +1,60 @@
-.sidebar{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+/* Codigo Refatorado 26/07 */
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+
+  .menuContainer, .logoffContainer {
     width: 100%;
-    height: 100vh;
-}
-
-.menuList {
     display: flex;
     flex-direction: column;
-    gap: 25px;
-    padding-bottom: 25px;
 
-    .menuItem {
-        width: 100%;
-        display: flex;
-        align-items: center;
-    
-    li {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 25px;
-        width: 100%;
-        list-style-type: none;
-        gap: 35px;
+    .logoContainer {
+      display: flex;
+      justify-content: center;
 
-        span {
-            text-align: left;
-            width: 100%;
-            font-weight: 400;
-            font-size: 18px;
-        }
+      .sidebarLogo {
+        width: 200px;
+        height: auto;
+        padding: 20px 0;
+      }
     }
-}
+    .menuList,
+    .menuItem {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding:0;
+      margin: 0;
+      height: 35px;
+      /* MUDANÇA: Substituído 'align-content: center' por 'align-items: center' 
+         para garantir o alinhamento vertical correto dos itens internos do menu. */
+      align-content: center;
+
+      .menuItem {
+        flex-direction: row; /* MUDANÇA: Garantido o alinhamento vertical dos ícones e textos lado a lado */
+        align-items: center;
+        padding: 10px 0;
+        padding-left: 30px;
+        gap: 20px;
+        height: 35px;
+
+      }
+  }
+  .logoffButton{
+    display: flex; 
+    align-items: center; /* MUDANÇA: Adicionado alinhamento vertical no botão de sair/desconectar */
+    gap: 20px;
+    padding: 10px 30px;
+    margin-bottom: 20px;
+  }
+
+  .menuItem:hover, .logoffButton:hover {
+        background: #d0ceff;
+      }
+    }
 }

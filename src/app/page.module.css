@@ -9,6 +9,9 @@
   --button-secondary-hover: #f2f2f2;
   --button-secondary-border: #ebebeb;
 
+  --dashboard-main: #374151;
+  --dashboard-p: #6b7280;
+
   display: flex;
   flex: 1;
   flex-direction: column;

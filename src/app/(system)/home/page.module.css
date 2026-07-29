@@ -7,7 +7,20 @@
  
     .header {
         width: 100%;
-        height: 96px;
+        text-align: left;
+        h1 {
+            width: 100%;
+            color: var(--dashboard-main);
+            font-size: 48px;
+            font-weight: 700;
+        }
+        p {
+            width: 100%;
+            color: var(--dashboard-p);
+            font-size:  22px;
+            font-weight: 400;
+
+        }
     }
  
     .cardIcon {
@@ -17,7 +30,6 @@
         border-radius: 20px;     
         padding: 50px;
         .cardSection {
-            border: 1px solid red;
             background-color: #fff;
             width: 421px;
             height: 359px;
@@ -92,6 +104,31 @@
         justify-content: center;
         background-color: #fff;
         border-radius: 20px;
+
+        h1 {
+            height: 51px;
+            color: var(--dashboard-main);
+            font-size: 42px;
+            font-weight: 700;
+
+        }
+        p {
+           height: 27px;
+           color: var(--dashboard-p);
+           font-size: 22px;
+           font-weight: 400;
+        }
+
+        .btnActions {
+            width: 660px;
+            height: 120px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+            padding: 20px 0 20px 0;
+        }
     }
  
 }

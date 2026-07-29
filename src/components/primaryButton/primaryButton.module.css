@@ -21,3 +21,17 @@
     border: none;
     color: #FFF;
 }
+.newProject {
+    width: 250px;
+    height: 70px;
+    background: #7361ed;
+    border-radius: 10px;
+    border: none;
+    color: #FFF;
+}
+.viewProducts {
+    width: 250px;
+    height: 70px;
+    border-radius: 10px;
+    background: #FFF;
+}

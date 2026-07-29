@@ -65,9 +65,9 @@ export default function HomePage() {
       <div className={styles.actionsCard}>
         <h1>Ações Rápidas</h1>
         <p>Acesse as principais funcionalidades do sitema.</p>
-        <div>
-          <Button>Criar novo projeto</Button>
-          <Button>Ver Relatórios</Button>
+        <div className={styles.btnActions}>
+          <Button variant="newProject">Criar novo projeto</Button>
+          <Button variant="viewProducts">Ver Relatórios</Button>
         </div>
       </div>
     </main>

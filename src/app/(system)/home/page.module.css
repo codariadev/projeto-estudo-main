@@ -16,16 +16,35 @@
         justify-content: space-evenly; 
         border-radius: 20px;     
         padding: 50px;
-        
-        .cardSection {t
+        .cardSection {
+            border: 1px solid red;
             background-color: #fff;
             width: 421px;
             height: 359px;
             border-radius: 20px;
-            .ImageMala {
-                box-shadow: 10px 10px 5px 12px lightblue;
-                padding: 12.5px;
+            padding: 50px;
+            
+            .iconMala{
+                background-color: lightblue;
                 border-radius: 20px;
+                width: 75px;
+                height: 75px;
+                padding: 12px;
+
+            }
+            .iconRelogio {
+                background-color: #ecfdf5FF;
+                border-radius: 20px;
+                width: 75px;
+                height: 75px;
+                padding: 12px;
+            }
+            .iconRelatorios {
+                background-color: #fff5e6FF;
+                border-radius: 20px;
+                width: 75px;
+                height: 75px;
+                padding: 12px;
             }
 
             .text {
@@ -50,7 +69,19 @@
                     font-size: 22px;
                     font-weight: 400;
                     color: #10b981FF;
-                }
+                }    
+            }
+            .infoRelatorios {
+                width: 321px;
+                height: 27px;
+                font-size: 22px;
+                font-weight: 400;
+                span {
+                    height: 27px;
+                    font-size: 22px;
+                    font-weight: 400;
+                    color: #f59e0bFF;;
+                }    
             }
         }
     }

@@ -5,7 +5,7 @@ import Button from "@/components/primaryButton/primaryButton";
 export default function HomePage() {
   return (
     <main className={styles.home}>
-      <div className={styles.header}>
+      <div className='header'> {/* Criação da variavel css global para todos os headers*/}
         <h1>Dashboard Principal.</h1>
         <p>Bem-Vindo de volta, aqui está o resumo das suas atividades.</p>
       </div>

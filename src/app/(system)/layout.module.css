@@ -27,6 +27,7 @@
 }
 
 .mainArea {
+  overflow: hidden;
   grid-area: main;
   background-color: #f4f6f8;
   padding: 24px;

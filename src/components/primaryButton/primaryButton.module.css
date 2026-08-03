@@ -22,16 +22,21 @@
     color: #FFF;
 }
 .newProject {
-    width: 250px;
-    height: 70px;
     background: #7361ed;
-    border-radius: 10px;
     border: none;
     color: #FFF;
 }
 .viewProducts {
+    background: #FFF;
+}
+
+.newProject, 
+.viewProducts {
     width: 250px;
     height: 70px;
     border-radius: 10px;
-    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }

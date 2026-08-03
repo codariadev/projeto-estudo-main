@@ -66,8 +66,8 @@ export default function HomePage() {
         <h1>Ações Rápidas</h1>
         <p>Acesse as principais funcionalidades do sitema.</p>
         <div className={styles.btnActions}>
-          <Button variant="newProject">Criar novo projeto</Button>
-          <Button variant="viewProducts">Ver Relatórios</Button>
+          <Button className={styles.btnIcon} variant="newProject"> <Image style={{fill:"aquamarine" }} src="sinal-de-mais.svg" alt="" width={30} height={30} />Criar novo projeto</Button>
+          <Button className={styles.btnIcon} variant="viewProducts"> <Image src="relatorio-de-dados.svg" alt="" width={30} height={30} /> Ver Relatórios</Button>
         </div>
       </div>
     </main>

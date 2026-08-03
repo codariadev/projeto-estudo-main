@@ -1,125 +1,124 @@
-.home{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  p {
+    margin: 0;
+  }
+
+  .cardIcon {
     width: 100%;
-    height: 100%;
-    padding: 0 50px;
- 
- 
-    .cardIcon {
-        width: 100%;
-        display: flex;
-        justify-content: space-between; 
-        border-radius: 20px;  
-        padding: 50px 0;   
-        .cardSection {
-            background-color: #fff;
-            width: 421px;
-            height: 359px;
-            border-radius: 20px;
-            padding: 50px;
-            
-            .iconMala{
-                background-color: lightblue;
-                border-radius: 20px;
-                width: 75px;
-                height: 75px;
-                padding: 12px;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    padding: 50px 0;
+    .cardSection {
+      background-color: #fff;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      padding: 25px;
+      
+      p:nth-child(4), p:nth-child(2){
+          color: var(--subtitle-text);
+      }
+      span{
+        font-size: 22px;
+      }
 
-            }
-            .iconRelogio {
-                background-color: #ecfdf5FF;
-                border-radius: 20px;
-                width: 75px;
-                height: 75px;
-                padding: 12px;
-            }
-            .iconRelatorios {
-                background-color: #fff5e6FF;
-                border-radius: 20px;
-                width: 75px;
-                height: 75px;
-                padding: 12px;
-            }
-
-            .text {
-                font-size: 22px;
-                font-weight: 400;
-                height: 27px;
-                color: var(--dashboard-p)
-            }
-            .num {
-                height: 51px;
-                font-size: 42px;
-                font-weight: 700;
-                color: var(--dashboard-main)
-            }
-            .info {
-                width: 321px;
-                height: 27px;
-                font-size: 22px;
-                font-weight: 400;
-                span {
-                    height: 27px;
-                    font-size: 22px;
-                    font-weight: 400;
-                    color: #10b981FF;
-                }    
-            }
-            .infoRelatorios {
-                width: 321px;
-                height: 27px;
-                font-size: 22px;
-                font-weight: 400;
-                span {
-                    height: 27px;
-                    font-size: 22px;
-                    font-weight: 400;
-                    color: #f59e0bFF;;
-                }    
-            }
-        }
-    }
-    .actionsCard{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background-color: #fff;
+      .iconMala {
+        background-color: #eaf1ff;
         border-radius: 20px;
-        padding: 0 25px;
+        width: 75px;
+        height: 75px;
+        padding: 12px;
+      }
+      .iconRelogio {
+        background-color: #ecfdf5ff;
+        border-radius: 20px;
+        width: 75px;
+        height: 75px;
+        padding: 12px;
+      }
+      .iconRelatorios {
+        background-color: #fff5e6ff;
+        border-radius: 20px;
+        width: 75px;
+        height: 75px;
+        padding: 12px;
+      }
 
-        h1 {
-            height: 51px;
-            color: var(--dashboard-main);
-            font-size: 42px;
-            font-weight: 700;
-
+      .text {
+        font-size: 22px;
+        font-weight: 400;
+        height: 27px;
+        color: var(--dashboard-p);
+      }
+      .num {
+        height: 42px;
+        font-size: 42px;
+        font-weight: 700;
+        color: var(--dashboard-main);
+      }
+      .info {
+        width: 321px;
+        height: 27px;
+        font-size: 22px;
+        font-weight: 400;
+        span {
+          height: 27px;
+          font-size: 22px;
+          font-weight: 400;
+          color: #10b981ff;
         }
-        p {
-           height: 27px;
-           color: var(--dashboard-p);
-           font-size: 22px;
-           font-weight: 400;
-        }
+      }
+      
+    }
+  }
+  .actionsCard {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 0 50px;
+    width: 100%;
+    box-sizing: border-box;
 
-        .btnActions {
-            width: 660px;
-            height: 120px;
-            background-color: #fff;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 20px;
-            padding: 20px 0 20px 0;
 
-            .btnIcon {
-                border: 1px solid red;
-                display: flex;
-                align-items: center;
-            }
+    h1 {
+      height: 51px;
+      color: var(--dashboard-main);
+      font-size: 42px;
+      font-weight: 700;
+    }
+    p {
+      height: 27px;
+      color: var(--dashboard-p);
+      font-size: 22px;
+      font-weight: 400;
+    }
+
+    .btnActions {
+      height: 120px;
+      background-color: #fff;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+      padding: 20px 0 20px 0;
+
+      .btnIcon {
+        display: flex;
+        align-items: center;
+
+        .svg {
+          width: 30px;
+          height: 30px;
+          fill: red;
+          stroke: red;
         }
     }
- 
+    }
+  }
 }

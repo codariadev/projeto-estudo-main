@@ -12,11 +12,11 @@ export default function Projects() {
             <div className={styles.content}>
                 <div className={styles.projectSearch}>
                 <input></input>
-                <Button>Todos os clientes</Button>
-                <Button>Todos os status</Button>
-                <Button>Todas as prioridades</Button>
-                <Button>Ordenar por</Button>
-                <Button>Limpar filtros</Button>
+                <Button variant='viewProducts'>Todos os clientes</Button>
+                <Button variant='viewProducts'>Todos os status</Button>
+                <Button variant='viewProducts'>Todas as prioridades</Button>
+                <Button variant='viewProducts'>Ordenar por</Button>
+                <Button variant='viewProducts'>Limpar filtros</Button>
             </div>
             <div className={styles.projectsPanel}>
                 <div className={styles.panelTitle}>

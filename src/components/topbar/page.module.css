@@ -1,10 +1,11 @@
 .topbar{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
 
     .searchContainer {
+        width: 100%;
         display: flex;
         justify-content: center;
         height: 100%;
@@ -12,14 +13,15 @@
         input {
             width: 620px;
             height: 30px;
-            border-radius: 20px;
+            border-radius: 10px;
             border: 1px solid #ecedec;
         }
         input[placeholder] {
             padding-left: 20px;
         }
         Button{
-            height: 30px;
+            height: 32px;
+            border-radius: 10px;
         }
     }
     .rightIcon {

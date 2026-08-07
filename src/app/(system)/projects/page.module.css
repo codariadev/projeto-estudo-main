@@ -4,6 +4,7 @@
         width: 100%;
         display: flex;
         flex-direction: column;
+        gap: 15px;
 
         .projectSearch {
             display: flex;
@@ -13,34 +14,33 @@
             height: 60px;
             border-radius: 20px;
             padding: 0 20px;
-
+            
             input {
                 width: 450px;
                 height: 30px;
                 border-radius: 15px;
                 border: 1px solid #ecedec;
             }
-
+            
             Button {
                 width: 80px;
                 height: 30px;
                 font-size: 10px;
             }
         }
-
+        
         .projectsPanel {
             background-color: #ffffff;
             border-radius: 20px;
-            width: 100%;
 
-            .panelTitle {
+            .panelTitle, .projectList {
                 font-size: 12px;
                 display: flex;
                 width: 100%;
                 justify-content: space-between;
                 align-items: center;
 
-                ul {
+                ul, .pItemContainer {
                     display: flex;
                     width: 100%;
                     align-items: center;
@@ -61,6 +61,47 @@
                         min-width: 150px;
                     }
 
+                }
+            }
+
+            .projectList{
+                
+                .pItemContainer{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    list-style: none;
+                    
+                    
+                    li{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: start;
+                        font-size: 12px;
+                        border: 1px solid #ecedce;
+                        p{
+                            width: 100%;
+                        }
+                    }
+                    p:nth-child(1),
+                    p:nth-child(2),
+                    p:nth-child(3),
+                    p:nth-child(5){
+                        min-width: 150px;
+                    }
+                    p:nth-child(5){
+                        padding: 0 5px;
+                    }
+                    p:nth-child(7){
+                        border: none;
+                        border-radius: 10px;
+                        background-color: green;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: #fff;
+                    }
                 }
             }
         }

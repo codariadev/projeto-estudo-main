@@ -1,42 +1,68 @@
-.base{
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.primary{
-    width: 100%;
-    height: 36px;
-    background: #7361ed;
-    border-radius: 10px;
-    border: none;
-    color: #FFF;
-}
-
-.search {
-    width: 150px;
-    height: 35px;
-    background: #7361ed;
-    border-radius: 10px;
-    border: none;
-    color: #FFF;
-}
-.newProject {
-    background: #7361ed;
-    border: none;
-    color: #FFF;
-}
-.viewProducts {
-    background: #FFF;
-}
-
-.newProject, 
-.viewProducts {
-    width: 250px;
-    height: 70px;
-    border-radius: 10px;
+.btn {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Source Sans", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+
+.btn-primary, 
+.btn-search, 
+.btn-newProject {
+    background: #7361ed;
+    color: #FFF;
+}
+
+.btn-viewProducts {
+    background: #FFF;
+    color: #374151;
+    border: 1px solid #ecedec;
+}
+
+.rounded{
+    width: 3rem;
+    height: 3rem;
+    background-color: #7361ed;
+    border-radius: 100%;
+    font-size: 3rem;
+    color: #ecedec;
+    transition: all 0.3s ease-in-out;
+
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.rounded:hover{
+    padding: 2rem;
+    font-size: 3.5rem;
+}
+
+/* Tamanhos */
+
+.btn-sm {
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+.btn-md {
+    width: 100%;
+    height: 36px;
+}
+
+.btn-mdx {
+    width: 200px;
+    height: 50px;
+}
+.btn-lg {
+    width: 250px;
+    height: 50px;
 }

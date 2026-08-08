@@ -1,19 +1,63 @@
+"use client";
+
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
 
 export default function Sidebar() {
-  const menuItems = [
-    { href: "/home", icon: "/icon-sidebar/home.svg", alt: "Início", label: "Início" },
-    { href: "/projects", icon: "/icon-sidebar/projetos.svg", alt: "Projetos", label: "Projetos" },
-    { href: "#", icon: "/icon-sidebar/minhas-tarefas.svg", alt: "Minhas Tarefas", label: "Minhas Tarefas" },
-    { href: "#", icon: "/icon-sidebar/calendario.svg", alt: "Calendário", label: "Calendário" },
-    { href: "#", icon: "/icon-sidebar/relatorios.svg", alt: "Relatórios", label: "Relatórios" },
-    { href: "#", icon: "/icon-sidebar/times.svg", alt: "Times", label: "Times" },
-    { href: "#", icon: "/icon-sidebar/clientes.svg", alt: "Clientes", label: "Clientes" },
-    { href: "#", icon: "/icon-sidebar/configuracao.svg", alt: "Configurações", label: "Configurações" },
-  ];
+  const pathname = usePathname();
 
+  const menuItems = [
+    {
+      href: "/home",
+      icon: "/icon-sidebar/home.svg",
+      alt: "Início",
+      label: "Início",
+    },
+    {
+      href: "/projects",
+      icon: "/icon-sidebar/projetos.svg",
+      alt: "Projetos",
+      label: "Projetos",
+    },
+    {
+      href: "#",
+      icon: "/icon-sidebar/minhas-tarefas.svg",
+      alt: "Minhas Tarefas",
+      label: "Minhas Tarefas",
+    },
+    {
+      href: "#",
+      icon: "/icon-sidebar/calendario.svg",
+      alt: "Calendário",
+      label: "Calendário",
+    },
+    {
+      href: "#",
+      icon: "/icon-sidebar/relatorios.svg",
+      alt: "Relatórios",
+      label: "Relatórios",
+    },
+    {
+      href: "#",
+      icon: "/icon-sidebar/times.svg",
+      alt: "Times",
+      label: "Times",
+    },
+    {
+      href: "#",
+      icon: "/icon-sidebar/clientes.svg",
+      alt: "Clientes",
+      label: "Clientes",
+    },
+    {
+      href: "#",
+      icon: "/icon-sidebar/configuracao.svg",
+      alt: "Configurações",
+      label: "Configurações",
+    },
+  ];
 
   return (
     <aside className={styles.sidebar}>
@@ -29,14 +73,23 @@ export default function Sidebar() {
           />
         </div>
 
-        {/* MUDANÇA: Utiliza map() para renderizar os itens de forma dinâmica e limpa sem necessidade de fazer li por li */}
         <ul className={styles.menuList}>
-          {menuItems.map((item, index) => (
-            <Link key={index} className={styles.menuItem} href={item.href}>
-              <Image src={item.icon} alt={item.alt} width={30} height={30} />
-              <span>{item.label}</span>
-            </Link>
-          ))}
+          {menuItems.map((item, index) => {
+            const isActive = item.href !== "#" && pathname === item.href;
+
+            return (
+              <Link key={index} className={`${styles.menuItem} ${isActive ? styles.active : ''}`} href={item.href}>
+                <Image
+                  className={styles.icon}
+                  src={item.icon}
+                  alt={item.alt}
+                  width={30}
+                  height={30}
+                />
+                <span>{item.label}</span>
+              </Link>
+            );
+          })}
         </ul>
       </div>
 

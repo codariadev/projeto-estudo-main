@@ -24,7 +24,7 @@ export default function Register() {
             placeholder="Confirme sua senha"
           />
 
-          <Button variant="primary">Registrar</Button>
+          <Button variant="btn-primary" size="btn-sm">Registrar</Button>
         </div>
         <p className={styles.haveAccount}>
           Já tem conta?{" "}

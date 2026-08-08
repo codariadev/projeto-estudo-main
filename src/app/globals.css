@@ -1,13 +1,13 @@
 :root {
-  
-  
   @font-face {
     font-family: "Source Sans";
     src: url("/fonts/Source_Sans_3/static/SourceSans3-Regular.ttf")
       format("truetype");
-      font-weight: 400;
+    font-weight: 400;
     font-style: normal;
   }
+
+  
 
   @font-face {
     font-family: "Source Sans";
@@ -16,11 +16,10 @@
     font-weight: 700;
     font-style: normal;
   }
-
-  
 }
 
-body, html {
+body,
+html {
   --title-text: #374151;
   --subtitle-text: #6b7280;
   --background: #ffffff;
@@ -30,6 +29,7 @@ body, html {
   --primary-button: #7361ed;
   --login-text: #ffffff;
   
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -49,10 +49,13 @@ body, html {
   display: flex;
   flex-direction: column;
   font-family: "Source Sans", sans-serif;
+
   h1 {
     color: var(--title-text);
+    font-size: clamp(1rem, 2vw + 1rem, 2rem);
   }
   p {
     color: var(--subtitle-text);
+    font-size: clamp(0.8rem, 1vw + 0.5rem, 1rem);
   }
 }

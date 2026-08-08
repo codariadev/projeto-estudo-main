@@ -5,8 +5,8 @@
   grid-template-areas: 
     "sidebar topbar"
     "sidebar main";
-  height: 100vh;
-  width: 100vw;
+  height: 100dvh;
+  width: 100dvw;
   overflow: hidden;
 }
 
@@ -27,8 +27,9 @@
 }
 
 .mainArea {
+  overflow: hidden;
   grid-area: main;
   background-color: #f4f6f8;
-  padding: 24px;
-  overflow-y: auto;
+  padding: 30px;
+  overflow-y: hidden;
 }

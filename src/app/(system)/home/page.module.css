@@ -1,7 +1,198 @@
-.home{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Código refatorado 07/08 */
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  font-family: "Source Sans", sans-serif;
+
+  p {
+    margin: 0;
+  }
+
+  .cardIcon {
     width: 100%;
-    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    padding: 2rem 0;
+
+    .cardSection {
+      background-color: #fff;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1.1rem;
+      padding: 1.5rem 2rem;
+
+      width: 14rem;
+      height: 9rem;
+
+      p:nth-child(2),
+      p:nth-child(4) {
+        color: var(--subtitle-text);
+      }
+
+      .iconMala,
+      .iconRelogio,
+      .iconRelatorios {
+        border-radius: 20px;
+        width: 1.2rem;
+        height: 1.2rem;
+        padding: 0.8rem;
+        .icon {
+          width: 1.2rem !important;
+          height: 1.2rem !important;
+        }
+      }
+
+      .iconMala {
+        background-color: #eaf1ff;
+      }
+      .iconRelogio {
+        background-color: #ecfdf5ff;
+      }
+      .iconRelatorios {
+        background-color: #fff5e6ff;
+      }
+
+      .text {
+        font-size: 1rem;
+        font-weight: 400;
+        color: var(--dashboard-p);
+      }
+
+      .num {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--dashboard-main);
+      }
+
+      .info {
+        font-size: 0.8rem;
+        font-weight: 400;
+
+        span {
+          font-size: 0.8rem;
+          font-weight: 400;
+          color: #10b981ff;
+        }
+      }
+    }
+  }
+
+  .actionsCard {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 0.5rem 2rem;
+    width: 100%;
+    box-sizing: border-box;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      color: var(--title-text);
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    p {
+      color: var(--subtitle-text);
+      font-size: 0.9rem;
+      font-weight: 400;
+    }
+
+    .btnActions {
+      background-color: #fff;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1.5rem;
+
+      .btnIcon {
+        display: flex;
+        align-items: center;
+
+        .svg {
+          width: 30px;
+          height: 30px;
+          fill: red;
+          stroke: red;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .home {
+    gap: 2rem;
+
+    .cardIcon {
+      padding: 0 !important;
+
+      .cardSection {
+        height: 12rem !important;
+        width: 19rem !important;
+        padding: 2.5rem 2.5rem !important;
+
+        .iconMala,
+        .iconRelogio,
+        .iconRelatorios {
+          border-radius: 20px;
+          width: 2rem;
+          height: 2rem;
+          padding: 1rem;
+          .icon {
+            width: 2rem !important;
+            height: 2rem !important;
+          }
+        }
+
+        .text {
+          font-size: 1.5rem;
+          font-weight: 400;
+          color: var(--dashboard-p);
+        }
+
+        .num {
+          font-size: 2rem;
+          font-weight: 700;
+          color: var(--dashboard-main);
+        }
+
+        .info {
+          font-size: 1rem;
+          font-weight: 400;
+
+          span {
+            font-size: 1rem;
+            font-weight: 400;
+            color: #10b981ff;
+          }
+        }
+      }
+    }
+    .actionsCard {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 1.5rem;
+      gap: 1rem;
+      h1 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 0.9rem;
+      }
+      .btnActions {
+        gap: 1.5rem;
+      }
+    }
+  }
 }

@@ -24,9 +24,8 @@ export default function Login() {
             placeholder="Senha"
           />
 
-          <Button variant="primary">Login</Button>
+          <Button variant="btn-primary" size="btn-sm">Login</Button>
 
-          {/* <button className={styles.submit} type="submit">Log in</button> */}
           <p className={styles.forgotPassword}>
             <a href="#" target="_blank">
               Esqueceu sua senha?

@@ -5,11 +5,12 @@
 
 .calendarContent {
     margin-top: 2rem;
+    padding: 12px;
+    background: #FCFDFD;
+    border-radius: 12px;
+    width: 100%;
+    height: 65vh;
 }
-
-/* =========================
-   TOOLBAR
-========================= */
 
 .calendarToolbar {
     display: flex;
@@ -17,6 +18,7 @@
     justify-content: space-between;
     margin-bottom: 1rem;
     gap: 1rem;
+    font-family: "Source Sans", sans-serif;
 }
 
 .calendarNavigation {
@@ -29,6 +31,14 @@
     display: flex;
     align-items: center;
     gap: 0.75rem;
+}
+
+.calendarTitle {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #27272a;
 }
 
 .navButton,
@@ -75,20 +85,19 @@
     background: #27272a;
 }
 
-/* =========================
-   CALENDAR PANEL
-========================= */
+.calendarLayout {
+    display: grid;
+    grid-template-columns: minmax(0, 3.5fr) minmax(250px, 1fr);
+    gap: 16px;
+    align-items: start;
+}
 
 .calendarPanel {
     background: #ffffff;
-    border: 1px solid #e4e4e7;
     border-radius: 12px;
     overflow: hidden;
+    padding: 5px;
 }
-
-/* =========================
-   FULLCALENDAR
-========================= */
 
 .calendarPanel :global(.fc) {
     font-family: inherit;
@@ -117,8 +126,7 @@
     letter-spacing: 0.02em;
 }
 
-
-.calendarPanel :global(.fc-daygrid-day-frame){
+.calendarPanel :global(.fc-daygrid-day-frame) {
     min-height: 80px !important;
 }
 
@@ -130,20 +138,6 @@
     text-decoration: none;
 }
 
-
-.calendarToolbar {
-    display: flex;
-    text-transform: capitalize;
-    align-items: center;
-    margin-bottom: 1rem;
-    gap: 1rem;
-    font-family: "Source Sans", sans-serif;
-}
-
-/* =========================
-   HOJE
-========================= */
-
 .calendarPanel :global(.fc-day-today) {
     background: #fafafa !important;
 }
@@ -152,35 +146,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
     width: 28px;
     height: 28px;
-
     margin: 0.45rem;
     padding: 0;
-
     border-radius: 50%;
     background: #18181b;
     color: #ffffff;
 }
 
-/* =========================
-   EVENTOS
-========================= */
-
 .calendarPanel :global(.fc-daygrid-event) {
     margin: 2px 6px;
     padding: 4px 7px;
-
     border: none;
     border-radius: 5px;
-
     background: #f4f4f5;
     color: #27272a;
-
     font-size: 0.75rem;
     font-weight: 500;
-
     cursor: pointer;
 }
 
@@ -199,9 +182,268 @@
     text-decoration: none;
 }
 
-
-
 .calendarPanel :global(.fc-day-other .fc-daygrid-day-number) {
     color: #a1a1aa;
 }
 
+.calendarSidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.miniCalendar {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 14px;
+    overflow: hidden;
+    border: 1px solid #eee;
+}
+
+.miniCalendarHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.miniCalendarTitle {
+    margin: 0;
+    color: #27272a;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.miniCalendarNavigation {
+    display: flex;
+    gap: 4px;
+}
+
+.miniNavButton {
+    width: 28px;
+    height: 28px;
+    border: none;
+    border-radius: 6px;
+    background: transparent;
+    color: #71717a;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.miniNavButton:hover {
+    background: #f4f4f5;
+}
+
+.miniCalendar :global(.fc) {
+    font-family: inherit;
+    font-size: 0.7rem;
+}
+
+.miniCalendar :global(.fc-theme-standard td),
+.miniCalendar :global(.fc-theme-standard th) {
+    border: none;
+}
+
+.miniCalendar :global(.fc-scrollgrid) {
+    border: none;
+}
+
+.miniCalendar :global(.fc-col-header-cell) {
+    padding: 5px 0;
+}
+
+.miniCalendar :global(.fc-col-header-cell-cushion) {
+    color: #a1a1aa;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.miniCalendar :global(.fc-daygrid-day-frame) {
+    min-height: 38px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.miniCalendar :global(.fc-daygrid-day-number) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    margin: 2px auto 0;
+    padding: 0;
+    color: #3f3f46;
+    font-size: 0.7rem;
+    text-decoration: none;
+}
+
+.miniCalendar :global(.fc-day-today) {
+    background: transparent !important;
+}
+
+.miniCalendar :global(.fc-day-today .fc-daygrid-day-number) {
+    background: #18181b;
+    color: #ffffff;
+    border-radius: 50%;
+}
+
+.miniCalendar :global(.fc-day-other .fc-daygrid-day-number) {
+    color: #d4d4d8;
+}
+
+.miniCalendar :global(.fc-daygrid-event-dot) {
+    display: none !important;
+}
+
+.miniCalendar :global(.fc-daygrid-day-events) {
+    margin: 0 !important;
+    padding: 0 !important;
+    min-height: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    flex-wrap: wrap;
+}
+
+.miniCalendar :global(.fc-daygrid-event-harness) {
+    display: inline-flex !important;
+    line-height: 0;
+}
+
+.miniCalendar :global(.fc-daygrid-event) {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+}
+
+.miniEventDot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #6366f1;
+    display: block;
+}
+
+.upcomingEvents {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 16px;
+    border: 1px solid #eee;
+    border-radius: 12px;
+}
+
+.upcomingHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+
+.upcomingTitle {
+    margin: 0;
+    color: #27272a;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.viewAll {
+    border: none;
+    background: transparent;
+    color: #71717a;
+    font-size: 0.75rem;
+    cursor: pointer;
+}
+
+.viewAll:hover {
+    color: #18181b;
+}
+
+.eventItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 12px 0;
+    border-bottom: 1px solid #f4f4f5;
+}
+
+.eventItem:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.eventTime {
+    min-width: 42px;
+    color: #27272a;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.eventInfo {
+    min-width: 0;
+}
+
+.eventName {
+    margin: 0 0 3px;
+    color: #27272a;
+    font-size: 0.78rem;
+    font-weight: 600;
+}
+
+.eventType {
+    margin: 0;
+    color: #a1a1aa;
+    font-size: 0.68rem;
+}
+
+.eventDot {
+    width: 7px;
+    height: 7px;
+    margin-top: 5px;
+    border-radius: 50%;
+    background: #18181b;
+    flex-shrink: 0;
+}
+
+@media (max-width: 1100px) {
+    .calendarLayout {
+        grid-template-columns: 1fr;
+    }
+
+    .calendarSidebar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+    .calendarToolbar {
+        flex-wrap: wrap;
+    }
+
+    .calendarTitle {
+        order: -1;
+        width: 100%;
+    }
+
+    .calendarActions {
+        width: 100%;
+    }
+
+    .addButton {
+        flex: 1;
+    }
+
+    .calendarSidebar {
+        grid-template-columns: 1fr;
+    }
+
+    .calendarPanel :global(.fc-daygrid-day-frame) {
+        min-height: 60px !important;
+    }
+}

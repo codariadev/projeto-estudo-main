@@ -1,15 +1,13 @@
 @font-face {
   font-family: "Source Sans";
-  src: url("/fonts/Source_Sans_3/static/SourceSans3-Regular.ttf")
-    format("truetype");
+  src: url("/fonts/Source_Sans_3/static/SourceSans3-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Source Sans";
-  src: url("/fonts/Source_Sans_3/static/SourceSans3-Bold.ttf")
-    format("truetype");
+  src: url("/fonts/Source_Sans_3/static/SourceSans3-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
@@ -41,6 +39,7 @@ body {
   }
 }
 
+:global(.header),
 .header {
   width: 100%; 
   display: flex;
@@ -48,12 +47,22 @@ body {
   font-family: "Source Sans", sans-serif;
 }
 
-.header h1 {
+:global(.header) h1,
+:global(.header) h3,
+.header h1,
+.header h3 {
   color: var(--title-text);
   font-size: clamp(1rem, 2vw + 1rem, 2rem);
+  margin: 0;
+  font-family: "Source Sans", sans-serif;
+  font-weight: 700;
 }
 
+:global(.header) p,
 .header p {
   color: var(--subtitle-text);
   font-size: clamp(0.8rem, 1vw + 0.5rem, 1rem);
+  margin: 0.25rem 0 0 0;
+  font-family: "Source Sans", sans-serif;
+  font-weight: 400;
 }

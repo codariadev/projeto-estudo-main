@@ -109,6 +109,7 @@ export default function Projects() {
         setSelectedPriority('');
         setSortOrder('');
     };
+    
 
     const filteredProjects = useMemo(() => {
         return projectsData

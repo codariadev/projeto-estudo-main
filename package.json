@@ -9,7 +9,11 @@
     "type": "git",
     "url": "https://github.com/seu-usuario/projeto-estudo.git"
   },
-  "keywords": ["nextjs", "react", "web"],
+  "keywords": [
+    "nextjs",
+    "react",
+    "web"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -18,9 +22,11 @@
     "format": "prettier --write ."
   },
   "dependencies": {
-    "next": "16.2.9",
+    "@fullcalendar/react": "^7.1.0",
+    "next": "^16.3.6",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "temporal-polyfill": "^1.0.5"
   },
   "devDependencies": {
     "babel-plugin-react-compiler": "1.0.0",

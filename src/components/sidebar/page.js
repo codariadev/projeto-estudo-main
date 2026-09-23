@@ -28,7 +28,7 @@ export default function Sidebar() {
       label: "Minhas Tarefas",
     },
     {
-      href: "#",
+      href: "/calendar",
       icon: "/icon-sidebar/calendario.svg",
       alt: "Calendário",
       label: "Calendário",

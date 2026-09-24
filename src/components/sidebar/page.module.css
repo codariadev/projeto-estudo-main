@@ -54,6 +54,7 @@
 
       .icon {
         width: 1.3rem;
+        height: auto;
       }
 
       &.active{

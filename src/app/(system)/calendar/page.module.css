@@ -336,6 +336,7 @@
     padding: 16px;
     border: 1px solid #eee;
     border-radius: 12px;
+    height: auto;
 }
 
 .upcomingHeader {

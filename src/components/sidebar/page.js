@@ -34,7 +34,7 @@ export default function Sidebar() {
       label: "Calendário",
     },
     {
-      href: "#",
+      href: "/reports",
       icon: "/icon-sidebar/relatorios.svg",
       alt: "Relatórios",
       label: "Relatórios",
